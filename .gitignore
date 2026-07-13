@@ -1,0 +1,41 @@
+# Build output
+target/
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local database files (H2, if used)
+*.db
+*.mv.db
+*.trace.db
+data/
+
+# Environment / secrets - never commit real values
+.env
+.env.local
+application-local.yml
+application-secrets.yml
+
+# SSH keys / credentials - never commit
+*.pem
+*.key
+*.p12
+
+# Compiled class files
+*.class

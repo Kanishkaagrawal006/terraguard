@@ -1,0 +1,39 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: TerraGuard
+
+  datasource:
+    url: jdbc:postgresql://localhost:5434/terraguard
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+terraguard:
+  webhook-token: ${TERRAGUARD_WEBHOOK_TOKEN}
+
+  slack:
+    bot-token: ${SLACK_BOT_TOKEN}
+    signing-secret: ${SLACK_SIGNING_SECRET}
+    repo-channel-map:
+      "[Kanishkaagrawal006/terraguard-demo]": C0BFVTLQYSX
+
+  github:
+    token: ${GITHUB_TOKEN}
+    mcp-server-url: ${GITHUB_MCP_SERVER_URL:https://api.githubcopilot.com/mcp}
+
+  groq:
+    api-key: ${GROQ_API_KEY}
+    model: llama-3.3-70b-versatile
+    api-url: https://api.groq.com/openai/v1/chat/completions

@@ -1,0 +1,1 @@
+﻿{"resource_changes":[{"address":"aws_security_group_rule.bad","type":"aws_security_group_rule","change":{"actions":["create"],"after":{"type":"ingress","cidr_blocks":["0.0.0.0/0"]}}}]}
