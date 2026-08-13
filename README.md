@@ -199,11 +199,3 @@ Add `.github/workflows/terraguard-plan.yml` to your Terraform repositories and s
 * `TERRAGUARD_WEBHOOK_TOKEN`: Matching shared secret token.
 
 ---
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
-
-```
-
-```
